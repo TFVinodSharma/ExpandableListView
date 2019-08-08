@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -19,13 +20,13 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     private List<String> listDataGroup;
 
     // child data in format of header title, child title
-    private HashMap<String, List<String>> listDataChild;
+    private HashMap<String, List<PersonalityItemDetail>> listDataChild;//,listDataChild1;
 
     public ExpandableListViewAdapter(Context context, List<String> listDataGroup,
-                                     HashMap<String, List<String>> listChildData) {
+                                     HashMap<String, List<PersonalityItemDetail>> listDataChild) {
         this.context = context;
         this.listDataGroup = listDataGroup;
-        this.listDataChild = listChildData;
+        this.listDataChild = listDataChild;
     }
 
     @Override
@@ -43,7 +44,7 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
     public View getChildView(int groupPosition, final int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
 
-        final String childText = (String) getChild(groupPosition, childPosition);
+        final PersonalityItemDetail personalityItemDetail = (PersonalityItemDetail) getChild(groupPosition, childPosition);
 
         if (convertView == null) {
             LayoutInflater layoutInflater = (LayoutInflater) this.context
@@ -53,8 +54,21 @@ public class ExpandableListViewAdapter extends BaseExpandableListAdapter {
 
         TextView textViewChild = convertView
                 .findViewById(R.id.textViewChild);
+        TextView textView = convertView
+                .findViewById(R.id.textView);
 
-        textViewChild.setText(childText);
+
+        if (personalityItemDetail.getHeader() != null) {
+            textViewChild.setText(personalityItemDetail.getHeader());
+            textViewChild.setVisibility(View.VISIBLE);
+
+        } else {
+            textViewChild.setVisibility(View.GONE);
+        }
+
+        textView.setText(personalityItemDetail.getValue());
+
+
         return convertView;
     }
 

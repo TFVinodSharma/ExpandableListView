@@ -1,48 +1,82 @@
 <resources>
     <string name="app_name">ExpandableListView</string>
 
-    <string name="text_alcohol">Alcohol</string>
-    <string name="text_coffee">Coffee</string>
-    <string name="text_pasta">Pasta</string>
-    <string name="text_cold_drinks">Cold Drinks</string>
-    <string name="text_expanded">Expanded</string>
-    <string name="text_collapsed">Collapsed</string>
+    <string name="text_intro">Intro</string>
+    <string name="text_bio">Bio</string>
+    <string name="text_batting_career">Batting Career</string>
+    <string name="text_major_awards">Major Awards and Prizes</string>
+    <string name="text_definning_movement">Definning Movement</string>
+    <string name="text_becomingdhoni">Becoming Dhoni</string>
 
 
 
-    <string-array name="string_array_alcohol">
-        <item>Vodka</item>
-        <item>Rum</item>
-        <item>Whiskey</item>
-        <item>Gin</item>
-        <item>Tequila</item>
+    <string-array name="string_array_Batting_Career">
+        <item>Test</item>
+        <item>ODI</item>
+        <item>IPL</item>
+        <item>T20</item>
+        <item>Home</item>
     </string-array>
 
-    <string-array name="string_array_coffee">
-        <item>Espresso</item>
-        <item>Macchiato</item>
-        <item>Cappuccino</item>
-        <item>Cafe Latte</item>
-        <item>Ristretto</item>
+    <string-array name="string_array_Batting_Career2">
+        <item>4000 runs in 90 matches(high score 224)</item>
+        <item>1077 runs in 350 matches(high 183)</item>
+        <item>IPL</item>
+        <item>1617 runs in 98 matches (high 56)</item>
+        <item>4686 runs in 190 matches (high 84)</item>
     </string-array>
 
-    <string-array name="string_array_pasta">
-        <item>Carbonara</item>
-        <item>Capellini</item>
-        <item>Spaghetti</item>
-        <item>Gnocchi</item>
-        <item>Lasagnette</item>
+    <string-array name="string_array_intro">
+        <item>Mahendra Singh Dhoni, commonly known as MS Dhoni, is an Indian international cricketer who captained the Indian national team in limited-overs formats from 2007 to 2016 and in Test cricket from 2008 to 2014.</item>
+
     </string-array>
 
-    <string-array name="string_array_cold_drinks">
-        <item>Cola</item>
-        <item>Lemonade</item>
-        <item>Citrus soda</item>
-        <item>Juice</item>
-        <item>Sparkling Water</item>
+    <string-array name="string_array_bio">
+        <item>NickName</item>
+        <item>D.O.B</item>
+        <item>Origin</item>
+        <item>Height</item>
+        <item>Batting Style</item>
+        <item>Bowling Style</item>
+        <item>Role(s)</item>
+        <item>ODI Debut </item>
+        <item>Team</item>
+    </string-array>
+
+    <string-array name="string_array_bio_second">
+        <item>MS Dhoni Captain Cool</item>
+        <item>7 july 1981</item>
+        <item>Ranchi ,India</item>
+        <item>5.8"</item>
+        <item>Right Handed</item>
+        <item>Right arm meduium</item>
+        <item>Wicket Keeper ,Batsman</item>
+        <item>23 dec 2004 </item>
+        <item>India,Super kings IPL,Jharkhand Cricket Team</item>
     </string-array>
 
 
+    <string-array name="string_major_awards_and_prizes">
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009 </item>
+        <item>2011</item>
+        <item>2018</item>
+    </string-array>
+
+    <string-array name="string_major_awards_and_prizes2">
+        <item>Rajiv Ghandhi khel Ratan Award</item>
+        <item>09 ICC Player of the year</item>
+        <item>Padam Shree Award </item>
+        <item>Honary dactarate award</item>
+        <item>Padam Bhusan Award</item>
+    </string-array>
+
+
+    <string-array name="string_definnig_movement">
+        <item>M.S. Dhoni: The Untold Story is a 2016 Indian bollywood biographical sports film ... The film stars Sushant Singh Rajput as Dhoni, along with Disha Patani, Kiara ..... M.S. Dhoni – The Untold Story (Original Motion Picture Hindi Soundtracks).</item>
+
+    </string-array>
 
 
 </resources>
