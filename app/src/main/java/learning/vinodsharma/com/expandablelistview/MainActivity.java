@@ -30,7 +30,11 @@ public class MainActivity extends AppCompatActivity {
         // preparing list data
         initListData();
     }
-
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        expandableListView.setIndicatorBounds(expandableListView.getRight()- 70, expandableListView.getWidth());
+    }
     private void initListeners() {
 
     }
